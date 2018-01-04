@@ -1675,7 +1675,7 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #f2849e !important;
+			color: #7ECAF6 !important;
 		}
 
 	strong, b {
@@ -1896,8 +1896,8 @@
 			}
 
 			.icon.style2:hover {
-				color: #f2849e;
-				border-color: #f2849e;
+				color: #7ECAF6;
+				border-color: #7ECAF6;
 			}
 
 			.icon.style2:active {

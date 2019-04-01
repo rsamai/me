@@ -1,0 +1,405 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Lunar Power</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+
+<body>
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+
+				<!-- Logo -->
+				<a href="index.html" class="logo">
+					<span class="symbol">
+						<img src="images/logo.png" alt="" />
+					</span>
+					<span class="title">HOME</span>
+				</a>
+
+				<!-- Nav-->
+				<nav>
+					<ul>
+						<li>
+							<a href="#menu">Menu</a>
+						</li>
+					</ul>
+				</nav>
+
+
+			</div>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<h2>Menu</h2>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+			</ul>
+		</nav>
+
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<h1>Glo.</h1>
+				<div style="display: flex; justify-content: center;">
+					<img src="images/lunarpower.png" width="300" height="300" align="right" />
+
+
+				</div>
+				<br />
+				<br />
+
+				<div class="row">
+					<div class="4u 12u$(medium)">
+
+						<h3>Team</h3>
+						<p>Rutu Samai, Matt Lewis, Eleanor Lewis, Tommy Dillon , Kelsi Damme</p>
+					</div>
+					<div class="4u 12u$(medium)">
+						<h3>Project</h3>
+						<p>February 2019 - Present</br>
+							CSC 308 - Software Engineering </br>
+							Design any application with approximately 4k lines of code using some Java.
+						</p>
+					</div>
+					<div class="4u 12u$(medium)">
+						<h3>My Role</h3>
+						<h4>Product Manager + UX Designer</h4>
+						<ul>
+							<li>Wrote Use Cases, User Stories, Functional Requirements</li>
+							<li>Prioritized design choices using AHP (Analytical Hierarchy Process) and CBAM(Concerns-Based Adoption Model) charts</li>
+							<li>Made class diagrams - Singleton, Entity Class Boundary, etc</li>
+							<li>Listed features, bugs, and pivots as issues on GitHub</li>
+							<li>Compiled final 20 page report and pitched to a 30 person class</li>
+						</ul>
+
+					</div>
+				</div>
+
+				<h3>Introduction</h3>
+				<h4>Overview</h4>
+				<p>Lunar Power is a mobile application designed to automate everyday tasks* performed on smart* devices. Tasks* can be completed
+					at a scheduled time, when the user falls asleep (sleep mode), or during periods of low power consumption (sustainability
+					mode).
+				</p>
+				<h4>Keywords</h4>
+				<ul>
+					<li>Smart- a smart appliance is one with access to the internet that can be remotely operated through internet connection.</li>
+					<li>Task - an executable that a device can perform.</li>
+					<li>Task History - A list of executed tasks* sorted by date- newest to oldest. It displays whether a task* was successfully
+						executed or the error it ran into.</li>
+				</ul>
+				<h4>Stack</h4>
+				<ul>
+					<li>Language: Java </li>
+					<li>IDE: Eclipse</li>
+					<li>Storage: Oracle DataBase</li>
+				</ul>
+
+
+				<h3>User Research</h3>
+				<h4>Related Systems</h4>
+				<p align="center">Google Home - Speaker with Voice Assistant and Mobile Application</p>
+				<div style="float: left; width: 50%;">
+					<nobr>Pros</nobr>
+					<ul>
+						<li>Easily compatible with all Google and Android devices</li>
+						<li>Conversational voice assistant</li>
+						<li>Use of high-quality and efficient Google Knowledge Graphs</li>
+						<li>Ability to recognize and differentiate multiple voices</li>
+					</ul>
+
+				</div>
+				<div style="float: right; width: 50%;">
+					<nobr>Cons</nobr>
+					<ul>
+						<li>Lack of privacy because Google is always listening to you</li>
+						<li>Must be plugged in at all times</li>
+						<li>Lack of control buttons on the device</li>
+						<li>Can’t send messages or emails</li>
+					</ul>
+				</div>
+
+				<p align="center">Lockitron - Smart* Door lock with Mobile Application</p>
+				<div style="float: left; width: 50%;">
+					<nobr>Pros</nobr>
+					<ul>
+						<li>Allows multiple users + temporary guests</li>
+						<li>Can trigger actions from anywhere in the world</li>
+						<li>Unlocks by scheduled times, by proximity, or mobile widget</li>
+					</ul>
+
+				</div>
+				<div style="float: right; width: 50%;">
+					<nobr>Cons</nobr>
+					<ul>
+						<li>Only connects to the Lockitron door locks</li>
+						<li>Has several bugs with bluetooth pairing</li>
+						<li>Needs Bridge device to lock away from home</li>
+					</ul>
+				</div>
+
+
+				<h4>User Stories</h4>
+				<ol>
+					<li>As a user, I want my audiobook to pause when I fall asleep, so that I can continue listening later.</li>
+					<li>As a user, I want to schedule tasks* in advance, so that I can avoid doing the task* manually.</li>
+					<li>As a user, I want to view my task history*, so that I know which tasks* executed successfully or ran into errors.</li>
+					<li>As a user, I want to edit the device permissions, so that I can limit the application’s access to my device data and
+						restrict its behavior.</li>
+					<li>As a user, I want to view a list of compatible devices, so that I know which of my devices can be connected.</li>
+					<li>As a user, I want an application that can make my roomba vacuum only when I’m asleep, so that I won’t get distracted
+						when I’m awake. </li>
+					<li>As a user, I want to run smart* home appliances at night, so that I can reduce my home’s energy consumption.</li>
+					<li>As a user, I want to update my PC at night, so that I can avoid wasting time during the workday. </li>
+					<li>As a user, I want my smart* home lights to turn off when I fall asleep, so that I can avoid getting up to turn off my
+						lights.
+					</li>
+					<li>As a user, I want to receive a notification when a task* has been completed, for assurance that the task* actually happened.</li>
+					<li>As a user, I only want to receive notifications during the day, so I’m not disturbed when I’m asleep.</li>
+					<li>As a user, I want to receive error notifications, so that I know what went wrong when a task* failed to execute.</li>
+					<li>As a user, I want my account on the cloud, so that I can access my task history* from any online device.</li>
+					<li>As a user, I want to connect my devices over wifi, so that I don’t have to be near the device to connect it.</li>
+					<li>As a user, I want the display to have a night mode, so that the screen isn’t hard to read at night.</li>
+
+				</ol>
+				<h4>Functional Requirements</h4>
+				<ol>
+					<li>The system shall track when users fall asleep via the user’s smartwatch.</li>
+					<li>The system shall detect and pair with user’s personal devices through wifi.</li>
+					<li>The system shall execute scheduled tasks* for that day on the target device upon detecting that the user is asleep.</li>
+					<li>The system shall send the user a notification each time a task* is executed.</li>
+					<li>The system shall allow users to select a time and date for a task* to execute.</li>
+					<li>The system shall be capable of launching updates and virus scans on standard Windows machines.</li>
+					<li>The system shall provide a home screen displaying the user’s task* calendar. </li>
+					<li>The system shall provide a list of compatible smart* devices.</li>
+					<li>The system shall provide search capability through task history* by device, date, and task*.</li>
+					<li>The system shall provide the completion status of previously ran device tasks* within the task history*. </li>
+					<li>The system shall provide timestamps for the time each task* began and the time each task* was completed. </li>
+					<li>The system shall provide a list of tasks* that can be executed for each paired device. </li>
+					<li>The system shall provide an option to run device tasks* during periods of low, grid-wide electricity usage. </li>
+					<li>The system shall store user’s data in a cloud database.</li>
+					<li>The system shall provide a “configure smart* watch” feature within settings. </li>
+				</ol>
+
+
+				<h3>Storyboard</h3>
+				<div style="display: flex; justify-content: center;">
+					<iframe src="images/lunarpower/storyboard.pdf" width="100%" height="500px">
+					</iframe>
+				</div>
+				<br />
+				<br />
+
+				<h3>Class Diagrams</h3>
+
+					<h4>Use Case Diagram</h4>
+					<div style="display: flex; justify-content: center;">
+						<iframe src="images/lunarpower/Use Case Diagram.pdf" width="50%" height="400px">
+						</iframe>
+					</div>
+					<br />
+					<br />
+
+					<h4>Entity Class Boundary Diagram</h4>
+					<div style="display: flex; justify-content: center;">
+						<iframe src="images/lunarpower/Class Diagram ECB.pdf" width="70%" height="350px">
+						</iframe>
+					</div>
+					<br />
+					<br />
+
+					<h4>Factory Pattern Diagram</h4>
+					<div style="display: flex; justify-content: center;">
+						<iframe src="images/lunarpower/FactoryPatternDiagram.pdf" width="70%" height="475px">
+						</iframe>
+					</div>
+					<br />
+					<br />
+
+					<h4>Singleton Diagram</h4>
+					<div style="display: flex; justify-content: center;">
+						<iframe src="images/lunarpower/SingletonDiagram.pdf" width="50%" height="300px">
+						</iframe>
+					</div>
+					<br />
+					<br />
+
+				<br />
+				<br />
+
+				<h3>Sequence Diagrams</h3>
+
+				<h4>Add Task</h4>
+				<div style="display: flex; justify-content: center;">
+					<iframe src="images/lunarpower/Add Task Sequence Diagram.pdf" width="70%" height="520px">
+					</iframe>
+				</div>
+				<br />
+				<br />
+
+				<h4>Connect Device</h4>
+				<div style="display: flex; justify-content: center;">
+					<iframe src="images/lunarpower/Connect Device Sequence Diagram.pdf" width="70%" height="525px">
+					</iframe>
+				</div>
+				<br />
+				<br />
+
+				<h4>Edit Task</h4>
+				<div style="display: flex; justify-content: center;">
+					<iframe src="images/lunarpower/Edit Task Sequence Diagram.pdf" width="70%" height="550px">
+					</iframe>
+				</div>
+				<br />
+				<br />
+
+				<h4>View Current Schedule</h4>
+				<div style="display: flex; justify-content: center;">
+					<iframe src="images/lunarpower/View Current Schedule Sequence Diagram.pdf" width="70%" height="400px">
+					</iframe>
+				</div>
+				<br />
+				<br />
+
+				<h4>View Task History</h4>
+				<div style="display: flex; justify-content: center;">
+					<iframe src="images/lunarpower/View Task History Sequence Diagram.pdf" width="70%" height="400px">
+					</iframe>
+				</div>
+				<br />
+				<br />
+				
+			<br />
+			<br />
+
+			<h3>Design Choices</h3>
+
+					<h4>Analytical Hierarchy Process - Prioritizing Tasks</h4>
+					<div style="display: flex; justify-content: center;">
+						<iframe src="images/lunarpower/ahp.pdf" width="90%" height="400px">
+						</iframe>
+					</div>
+					<br />
+					<br />
+
+					<h4>Concerns-Based Adoption Model</h4>
+					<div style="display: flex; justify-content: center;">
+						<iframe src="images/lunarpower/cbam.pdf" width="90%" height="500px">
+						</iframe>
+					</div>
+					<br />
+					<br />
+
+				<h3>Takeaways</h3>
+				<ul>
+					<li>Coding is not always the hardest part of a project. </li>
+					<li>Scoping a large scaled project is ITERATIVE. Spending 5 hours deciding our features its vocabulary in a session may
+						be completely scrapped out in 1 week. </li>
+
+				</ul>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<a name="footer"></a>
+			<div class="inner">
+				<section>
+					<h2>Get in touch</h2>
+					<form method="post" action="mailto: rutusamai@gmail.com">
+						<div class="field half first">
+							<input type="text" name="name" id="name" placeholder="Name" />
+						</div>
+						<div class="field half">
+							<input type="email" name="email" id="email" placeholder="Email" />
+						</div>
+						<div class="field">
+							<textarea name="message" id="message" placeholder="Message"></textarea>
+						</div>
+						<ul class="actions">
+							<li>
+								<input type="submit" value="Send" class="special" />
+							</li>
+							<li>
+								<input type="reset" value="Reset"> </li>
+						</ul>
+					</form>
+				</section>
+				<section>
+					<h2>Follow</h2>
+					<ul class="icons">
+						<li>
+							<a href="https://www.linkedin.com/in/rutusamai/" class="icon style2 fa-linkedin" target="_blank">
+								<span class="label">linkedin</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/rsamai" class="icon style2 fa-github" target="_blank">
+								<span class="label">GitHub</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/totesrutu/" class="icon style2 fa-instagram" target="_blank">
+								<span class="label">Instagram</span>
+							</a>
+						</li>
+						<br> </br>
+						<li>
+							<a href="https://twitter.com/totesrutu" class="icon style2 fa-twitter" target="_blank">
+								<span class="label">Twitter</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/rutu.samai" class="icon style2 fa-facebook" target="_blank">
+								<span class="label">Facebook</span>
+							</a>
+						</li>
+						<li>
+							<a href="mailto: rutusamai@gmail.com" class="icon style2 fa-envelope-o">
+								<span class="label">Email</span>
+							</a>
+						</li>
+					</ul>
+				</section>
+				<ul class="copyright">
+					<li>&copy;Rutu Samai</li>
+					<li>Design:
+						<a href="http://html5up.net">HTML5 UP</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

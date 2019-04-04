@@ -60,9 +60,9 @@
 		<div id="main">
 			<div class="inner">
 
-				<h1>Glo.</h1>
+				<h1>Lunar Power</h1>
 				<div style="display: flex; justify-content: center;">
-					<img src="images/lunarpower.png" width="300" height="300" align="right" />
+					<img src="images/lunarpower.png" width="250" height="300" align="right" />
 
 
 				</div>
@@ -98,8 +98,8 @@
 
 				<h3>Introduction</h3>
 				<h4>Overview</h4>
-				<p>Lunar Power is a mobile application designed to automate everyday tasks* performed on smart* devices. Tasks* can be completed
-					at a scheduled time, when the user falls asleep (sleep mode), or during periods of low power consumption (sustainability
+				<p>Lunar Power is an Android application designed to automate everyday tasks* performed on smart* devices. Tasks* can be
+					completed at a scheduled time, when the user falls asleep (sleep mode), or during periods of low power consumption (sustainability
 					mode).
 				</p>
 				<h4>Keywords</h4>
@@ -204,6 +204,13 @@
 
 
 				<h3>Storyboard</h3>
+				<p>1st Draft Whiteboarding</p>
+				<div style="display: flex; justify-content: center;">
+					<img src="images/lunarpower/whiteboard.png" height="400" align="right" />
+
+
+				</div>
+				<p>Final UI</p>
 				<div style="display: flex; justify-content: center;">
 					<iframe src="images/lunarpower/storyboard.pdf" width="100%" height="500px">
 					</iframe>
@@ -213,37 +220,37 @@
 
 				<h3>Class Diagrams</h3>
 
-					<h4>Use Case Diagram</h4>
-					<div style="display: flex; justify-content: center;">
-						<iframe src="images/lunarpower/Use Case Diagram.pdf" width="50%" height="400px">
-						</iframe>
-					</div>
-					<br />
-					<br />
+				<h4>Use Case Diagram</h4>
+				<div style="display: flex; justify-content: center;">
+					<iframe src="images/lunarpower/Use Case Diagram.pdf" width="50%" height="400px">
+					</iframe>
+				</div>
+				<br />
+				<br />
 
-					<h4>Entity Class Boundary Diagram</h4>
-					<div style="display: flex; justify-content: center;">
-						<iframe src="images/lunarpower/Class Diagram ECB.pdf" width="70%" height="350px">
-						</iframe>
-					</div>
-					<br />
-					<br />
+				<h4>Entity Class Boundary Diagram</h4>
+				<div style="display: flex; justify-content: center;">
+					<iframe src="images/lunarpower/Class Diagram ECB.pdf" width="70%" height="350px">
+					</iframe>
+				</div>
+				<br />
+				<br />
 
-					<h4>Factory Pattern Diagram</h4>
-					<div style="display: flex; justify-content: center;">
-						<iframe src="images/lunarpower/FactoryPatternDiagram.pdf" width="70%" height="475px">
-						</iframe>
-					</div>
-					<br />
-					<br />
+				<h4>Factory Pattern Diagram</h4>
+				<div style="display: flex; justify-content: center;">
+					<iframe src="images/lunarpower/FactoryPatternDiagram.pdf" width="70%" height="475px">
+					</iframe>
+				</div>
+				<br />
+				<br />
 
-					<h4>Singleton Diagram</h4>
-					<div style="display: flex; justify-content: center;">
-						<iframe src="images/lunarpower/SingletonDiagram.pdf" width="50%" height="300px">
-						</iframe>
-					</div>
-					<br />
-					<br />
+				<h4>Singleton Diagram</h4>
+				<div style="display: flex; justify-content: center;">
+					<iframe src="images/lunarpower/SingletonDiagram.pdf" width="50%" height="300px">
+					</iframe>
+				</div>
+				<br />
+				<br />
 
 				<br />
 				<br />
@@ -289,35 +296,147 @@
 				</div>
 				<br />
 				<br />
-				
-			<br />
-			<br />
 
-			<h3>Design Choices</h3>
+				<br />
+				<br />
 
-					<h4>Analytical Hierarchy Process - Prioritizing Tasks</h4>
-					<div style="display: flex; justify-content: center;">
-						<iframe src="images/lunarpower/ahp.pdf" width="90%" height="400px">
-						</iframe>
-					</div>
-					<br />
-					<br />
+				<h3>Design Choices</h3>
 
-					<h4>Concerns-Based Adoption Model</h4>
-					<div style="display: flex; justify-content: center;">
-						<iframe src="images/lunarpower/cbam.pdf" width="90%" height="500px">
-						</iframe>
-					</div>
-					<br />
-					<br />
+				<h4>Analytical Hierarchy Process - Prioritizing Tasks</h4>
+				<nobr>The process was scoring the requirements on a scale of 1/9 - 9 on the following factors: </nobr>
+				<blockquote> Value: How important/urgent and valuable is this feature to implement in my application?</blockquote>
+				<blockquote> Cost: How much time and resources will building this feature require?</blockquote>
+				<p>
+					<br> 1 means row and column have equal value 5 means row is strongly more than column
+					<br> 9 means row is extremely more than column
+					<br> 1/5 means column is strongly more than row
+					<br> 1/5 means column is strongly more than row
+				</p>
 
-				<h3>Takeaways</h3>
+				<p>For example, in the YELLOW box, we see that Schedule Tasks in advance is strongly more valuable than Add new tasks because
+					users will want a single task to run in advance before adding new ones. Users may not have a smartwatch to enable the
+					Sleep Mode, so they would want to preset times to execute tasks.
+					<br> </p>
+				<b>Results</b>
+				<p>From this numeric heavy analysis, the chart shows that the most high priority requirement is 1) Pause Audio Media, 2)
+					View History, 3) Schedule Tasks in advance, 4) Add new tasks.
+					<br> Though this gave me a great idea of what requirements to tackle first, the method has its flaws:</p>
 				<ul>
-					<li>Coding is not always the hardest part of a project. </li>
-					<li>Scoping a large scaled project is ITERATIVE. Spending 5 hours deciding our features its vocabulary in a session may
-						be completely scrapped out in 1 week. </li>
-
+					<li>Requirements aren't directly comparable or independent</li>
+					<li>It's difficult to stay consistent with scoring and comparisons</li>
+					<li>Hard to quantify differences</li>
 				</ul>
+
+				<p>From this numeric heavy analysis, the chart shows that the most high priority requirement is 1) Pause Audio Media, 2)
+					View History, 3) Schedule Tasks in advance, 4) Add new tasks. As I analyzed the results, it made sense, as the Pause
+					Audio Media would be the first task we program and thus allowing simple functionality to the MVP application.
+					<br>
+				</p>
+
+				<div style="display: flex; justify-content: center;">
+					<iframe src="images/lunarpower/AHP.pdf" width="90%" height="500px">
+					</iframe>
+				</div>
+				<br />
+				<br />
+
+				<h4>Concerns-Based Adoption Model</h4>
+				<p>Goal: Decide which device, smartwatch, and data storage option to work on first, in order to make a Minimum Viable Product.
+					</p>
+				<nobr>I chose the following metrics because I found them appropriate to our design decision needs. Each metric has a different
+					weight for each design decision based on relevance.</nobr>
+				<ul>
+					<li>Security -Whether the device itself is secure and if we can keep our interactions with the device controlled.</li>
+					<li>Maintainability -How often the device get updated or a new generation is released, thus needing to change our code to
+						match any new deprecations or additions.</li>
+					<li>Commonality -How common these devices are used and owned by our target customer so that we allow maximum usage.</li>
+					<li>Interoperability -The ability of computer systems or software to exchange and make use of information on different platforms
+						and environments.</li>
+					<li>Reliability -How often these devices have bugs, crashes and how easy it is to retrieve information, documentation, and
+						customer support.</li>
+				</ul>
+				<blockquote>The ratings are on a scale from [-1, +1], higher being better
+					<br> The risk for each alternative was on a scale from [0,1], 1 being the most risky
+					<br> The benefit score is an equation = (weighted average of the metrics’ rating) x ( |Risk - 1|
+					<br> Desirability = Benefit/Cost <br> </blockquote>
+				<b>Results</b>
+				<p>The CBAM recommended we pursue the Amazon Smart Plug, Letscom Fitness Tracker, and Oracle Database. These options agreed
+					with our predictions because The Amazon smart plug is a fair common, cost-effective device and the API seemed friendly
+					to work with. The other smartwatches are costly and have high security barriers and my teammates were familiar and eager
+					to learn Oracle DB.
+					<br> Overall, the cons to an algorithmic approach to design decisions are that it’s unrealistic to fairly rank qualitative
+					factors with numbers, so we must always use our human judgement calls, using the CBAM as a tool.
+				</p>
+				<div style="display: flex; justify-content: center;">
+					<iframe src="images/lunarpower/CBAM.pdf" width="90%" height="500px">
+					</iframe>
+				</div>
+				<br />
+				<br />
+
+				<h3>Reflection + Takeaways</h3>
+
+				<h4>Overall</h4>
+				<p> Coding isn’t always the hardest part of a project. This was my first time taking 2+ months to thoroughly research and
+					scope out a project before coding a single line. Looking back, I can’t imagine how I jumped into projects without these
+					steps because they were integral to our fundamental understanding of the problem and best alotting time and playing
+					to our team’s strengths.
+					<br> Due to the course structure, each team member made their version of a storyboard individually, then we were allowed
+					to collaborate. This technique allowed us to think creatively on our own, rather than piling on ideas with tunnel vision,
+					and have a diverse set of ideas; however, it was a challenge to merge everyone’s.
+					<br> Defining the goals, MVP features, and vocabulary of a large scaled project is an ITERATIVE, sometimes frustrating process.
+				</p>
+
+				<blockquote> When each of us first walked through our storyboard, it seemed like we were building completely different apps. </blockquote>
+
+				<p>
+					<br>After combining our individual user stories and functional requirements, we spent 5 hours stepping through each member’s
+					version and how we could combine the promising components of each. But in the following meeting, we almost completing
+					scrapped it and started over. I didn’t expect finalizing this to take so long, but the challenge was making requirements
+					not overlap, not showing implementation (ex. click button that triggers a database query), and being precise with any
+					time periods or numbers. </p>
+
+				<h4>Nomenclature</h4>
+				<p>Our individual versions had a wide range of nomenclature and quite unique user journeys. In my version 1, I used the
+					word “skills” instead of “tasks” and the user would create a “cycle” for each day composed of skills. Although, we pivoted
+					because it seemed tedious to create an ordered list each day. It’s more practical and familiar to have a calendar setting.
+					<br>Additionally, my v1 had “logs” to display the status of each skill executed, but my teammate pointed out that “logs”
+					and “skills” were very developer oriented nomenclature, which isn’t inclusive. Developers know from their IDEs or similar
+					that logs are the summary of all actions completed and errors. Amazon Alexa skills are a familiar concept and developers
+					know it’s an executable task, usually paired with a device.
+					<br> After several whiteboard sessions and asking random users in the library to walk through our screens and talking out
+					loud, we decided on the final nomenclature and sequence of steps that was most intuitive.
+				</p>
+
+				<h4>Android App and Dark Mode</h4>
+				<p>This was my first time designing an Android and dark mode app. As a primarily Apple user, I hadn’t explored much of Material
+					design.
+				</p>
+				<blockquote>Material design has imaginative thought, careful emotion, and refreshing logic behind it.</blockquote>
+				<p>
+					<br> There are so many amazing resources and videos about the philosophy and it values the user’s learning curve and needs.
+					Material Design makes sure the user knows their power via clear feedback and emphasis on motion design. This is the
+					main difference, compared to flat design in iOS which has significant discoverability and the user must guess and memorize
+					design patterns.
+					<br> My research of 30+ Android and Dark mode apps (Twitter Dark, Spotify, etc) was impactful and a visual way to understand
+					the common flows and feedback icons, like the back button and common complimentary colors. ||Dark mode is not just inverting
+					colors. It makes you wonder what’s essential and what’s not. As a beginner, it’s tricky to do in material design, which
+					usually shows shadows and depth, even on black backgrounds. I could’t have done it without the Sketch template on Material
+					Design and materialdesign.io.
+				</p>
+
+				<h4>Team</h4>
+				<p> This team was incredibly driven and had a growth-mindset. Even when we scrapped entire designs, we didn’t take the easy
+					way out. We meticulously investigated why a certain method isn’t working or why we’re not on the same page and solved
+					the problems. From our Petra dinner nomming on falafels, to stress-eating Thai food and working till 4:30 AM in the
+					library the night before the presentation, we trusted and helped one another learn various concepts and complete deliverables.
+					I’m very grateful for this dynamic group and I’m looking forward to coding the app in the next couple of months with
+					them.</p>
+				<div style="display: flex; justify-content: center;">
+					<img src="images/lunarpower/team.png" width="250" height="300" align="right" />
+
+
+				</div>
 			</div>
 		</div>
 
@@ -360,13 +479,13 @@
 							</a>
 						</li>
 						<li>
-							<a href="https://www.instagram.com/totesrutu/" class="icon style2 fa-instagram" target="_blank">
+							<a href="https://www.instagram.com/rutusamaii/" class="icon style2 fa-instagram" target="_blank">
 								<span class="label">Instagram</span>
 							</a>
 						</li>
 						<br> </br>
 						<li>
-							<a href="https://twitter.com/totesrutu" class="icon style2 fa-twitter" target="_blank">
+							<a href="https://twitter.com/rutusamai" class="icon style2 fa-twitter" target="_blank">
 								<span class="label">Twitter</span>
 							</a>
 						</li>
@@ -381,13 +500,6 @@
 							</a>
 						</li>
 					</ul>
-				</section>
-				<ul class="copyright">
-					<li>&copy;Rutu Samai</li>
-					<li>Design:
-						<a href="http://html5up.net">HTML5 UP</a>
-					</li>
-				</ul>
 			</div>
 		</footer>
 
